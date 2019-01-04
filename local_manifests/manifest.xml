@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- GSI device tree -->
+  <project path="device/phh/treble" name="xX-Yoshi-Xx/device_phh_treble" remote="github" revision="android-9.0" />
+
+  <!-- Overlays for devices -->
+  <project path="vendor/hardware/overlay" name="xX-Yoshi-Xx/vendor_hardware_overlay" remote="github" revision="android-9.0" />
+
+  <!-- Open GApps -->
+  <remote name="opengapps" fetch="https://github.com/opengapps/"  />
+
+  <project path="vendor/opengapps/build" name="aosp_build" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/all" name="all" clone-depth="1" revision="master" remote="opengapps" />
+
+  <!-- arm64 depends on arm -->
+  <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
+  <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
+
+</manifest>
