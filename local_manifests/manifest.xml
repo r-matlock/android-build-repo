@@ -4,7 +4,7 @@
   <project path="device/phh/treble" name="xX-Yoshi-Xx/device_phh_treble" remote="github" revision="android-9.0" />
 
   <!-- Overlays for devices -->
-  <project path="vendor/hardware/overlay" name="xX-Yoshi-Xx/vendor_hardware_overlay" remote="github" revision="android-9.0" />
+  <project path="vendor/hardware_overlay" name="xX-Yoshi-Xx/vendor_hardware_overlay" remote="github" revision="android-9.0" />
 
   <!-- Open GApps -->
   <remote name="opengapps" fetch="https://github.com/opengapps/"  />
