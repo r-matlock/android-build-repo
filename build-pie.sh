@@ -277,10 +277,6 @@ function init_release() {
     mkdir -p release/"$rom_fp"
 }
 
-function init_main_repo() {
-    repo init -u "$mainrepo" -b "$mainbranch"
-}
-
 function clone_or_checkout() {
     local dir="$1"
     local repo="$2"
@@ -294,28 +290,6 @@ function clone_or_checkout() {
         )
     else
         git clone https://github.com/phhusson/"$repo" "$dir" -b "$localManifestBranch"
-    fi
-}
-
-function init_local_manifest() {
-    clone_or_checkout .repo/local_manifests treble_manifest
-}
-
-function init_patches() {
-    if [[ -n "$treble_generate" ]]; then
-        clone_or_checkout patches treble_patches
-
-        # We don't want to replace from AOSP since we'll be applying
-        # patches by hand
-        rm -f .repo/local_manifests/replace.xml
-
-        # Remove exfat entry from local_manifest if it exists in ROM manifest 
-        if grep -rqF exfat .repo/manifests || grep -qF exfat .repo/manifest.xml;then
-            sed -i -E '/external\/exfat/d' .repo/local_manifests/manifest.xml
-        fi
-
-        # should I do this? will it interfere with building non-gapps images?
-        # rm -f .repo/local_manifests/opengapps.xml
     fi
 }
 
@@ -378,9 +352,6 @@ fi
 
 init_release
 if [[ $choice == *"y"* ]];then
-init_main_repo
-init_local_manifest
-init_patches
 sync_repo
 fi
 patch_things
