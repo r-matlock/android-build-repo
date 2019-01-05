@@ -16,4 +16,8 @@
   <project path="vendor/opengapps/sources/arm" name="arm" clone-depth="1" revision="master" remote="opengapps" />
   <project path="vendor/opengapps/sources/arm64" name="arm64" clone-depth="1" revision="master" remote="opengapps" />
 
+  <!-- phhusson vendor files -->
+  <project path="vendor/interfaces" name="phhusson/vendor_interfaces" remote="github" revision="master" />
+  <project path="vendor/vndk" name="phhusson/vendor_vndk" remote="github" revision="master" />
+
 </manifest>
