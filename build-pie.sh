@@ -39,7 +39,7 @@ ROM types:
   e-0.2
   lineage151
   lineage160
-  liquidremix
+  liquid
   rr
   pixel81
   pixel90
@@ -126,7 +126,7 @@ function get_rom_type() {
                 treble_generate="lineage"
                 extra_make_options="WITHOUT_CHECK_API=true"
                 ;;
-            liquidremix)
+            liquid)
                 mainrepo="https://github.com/LiquidRemix/android_manifest.git"
                 mainbranch="pie"
                 localManifestBranch="android-9.0"
