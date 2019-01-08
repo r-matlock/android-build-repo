@@ -16,6 +16,7 @@
   <!-- APNs -->
   <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
 
-  <!-- exfat support -->
+  <!-- exfat support from phh -->
+  <remove-project name="external/exfat" />
   <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
 </manifest>
