@@ -17,8 +17,10 @@ https://github.com/phhusson/platform_system_bt/commit/8636a41a7ec412e3be579c7b1e
 4. In external/selinux, apply these commits:
 https://github.com/phhusson/platform_external_selinux/commits/android-8.1.0_r60-phh
 
-5. In system/sepolicy, apply this commit:
-https://github.com/phhusson/platform_system_sepolicy/commit/6604d28644d4ad69ca937164c33d0b35134c5ecc
+5. In system/sepolicy, apply these commits:
+https://github.com/phhusson/platform_external_selinux/commit/f0fb4b89c52f3dc4971be0ddfc07ae2b51c40f4a
+https://github.com/phhusson/platform_external_selinux/commit/89372ddb9b8cb84fd5b5bcd607156995c43dc75e
+https://github.com/phhusson/platform_external_selinux/commit/e8790f87dd3498d95e82e091ab6929c0a89b2822
 
 6. In frameworks/base, apply my commits here: 
 https://github.com/xX-Yoshi-Xx/android_frameworks_base/commits/pie
