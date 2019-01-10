@@ -11,4 +11,6 @@ When building Liquid Remix for a GSI, the following must be done.
 include vendor/liquid/config/BoardConfigLiquid.mk
 #endif
 
+3. In system/bt, apply this commit: https://github.com/phhusson/platform_system_bt/commit/8636a41a7ec412e3be579c7b1eb681f73cb5b4bc
+
 
