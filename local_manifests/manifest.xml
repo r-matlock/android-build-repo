@@ -10,13 +10,8 @@
 
   <project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
   <project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
-  <project path="vendor/gapps-go" name="gapps-go" remote="phh" revision="master" />
   <project path="vendor/interfaces" name="vendor_interfaces" remote="phh" revision="pie" />
 
   <!-- APNs -->
   <project path="device/sample" name="device/sample" groups="pdk" remote="aosp" />
-
-  <!-- exfat support from phh -->
-  <remove-project name="external/exfat" />
-  <project path="external/exfat" name="exfat" remote="phh" revision="android.bp-pie" />
 </manifest>

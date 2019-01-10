@@ -1,5 +1,14 @@
-1. When building Liquid Remix, the following lines must be commented out of device/liquid/sepolicy/common/private/file_contexts:
+When building Liquid Remix for a GSI, the following must be done.
+
+1. These lines have to be commented out of device/liquid/sepolicy/common/private/file_contexts:
 
 /system/bin/fsck\.exfat                 u:object_r:fsck_exec:s0
 /system/bin/fsck\.ntfs                  u:object_r:fsck_exec:s0
+
+2. In build/core/config.mk, comment out the lines above and below the inclusion of BoardConfigLiquid.mk so it looks like this:
+
+#ifneq ($(LIQUID_BUILD),)
+include vendor/liquid/config/BoardConfigLiquid.mk
+#endif
+
 
