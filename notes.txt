@@ -1,4 +1,5 @@
 1. When building Liquid Remix, the following lines must be commented out of device/liquid/sepolicy/common/private/file_contexts:
+
 /system/bin/fsck\.exfat                 u:object_r:fsck_exec:s0
 /system/bin/fsck\.ntfs                  u:object_r:fsck_exec:s0
 
