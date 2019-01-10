@@ -23,3 +23,6 @@ https://github.com/phhusson/platform_system_sepolicy/commit/6604d28644d4ad69ca93
 
 6. In frameworks/base, apply my commits here: 
 https://github.com/xX-Yoshi-Xx/android_frameworks_base/commits/pie
+
+7. In system/vold, cherry-pick all of phh's commits from here:
+https://github.com/phhusson/platform_system_vold/commits/android-9.0.0_r30-phh
